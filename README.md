@@ -49,7 +49,7 @@ app由作者保留最终解释权。感谢您的支持与理解！
 点击底部课程按钮我们可以打开课程表页面，此时可以看到课程表定位到本周课程。  
 点击屏幕右上角的菜单按钮  
 **点击导入课表**  
-![import](file:///android_asset/guide_img/guide_course_import.jpg)  
+![import](https://github.com/huanyuyh/wuthelperApp/blob/master/app/src/main/assets/guide_img/guide_course_import.jpg)  
 **登录智慧理工大账号**
 ![import](file:///android_asset/guide_img/guide_course_import_login.jpg)  
 **此时会弹出是否导入课程 点击是 回到课程表后可看到课程。**
