@@ -51,7 +51,7 @@ app由作者保留最终解释权。感谢您的支持与理解！
 **点击导入课表**  
 ![import](https://github.com/huanyuyh/wuthelperApp/blob/master/app/src/main/assets/guide_img/guide_course_import.jpg)  
 **登录智慧理工大账号**
-![import](file:///android_asset/guide_img/guide_course_import_login.jpg)  
+![import](https://github.com/huanyuyh/wuthelperApp/blob/master/app/src/main/assets/guide_course_import_login.jpg)  
 **此时会弹出是否导入课程 点击是 回到课程表后可看到课程。**
 ## 如何修改开学日期
 点击底部课程按钮我们可以打开课程表页面  
