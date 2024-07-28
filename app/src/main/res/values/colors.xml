@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="firsttext">#010101</color>
+    <color name="secondtext">#2cb0ff</color>
+    <color name="thirdtext">#e63564</color>
+    <color name="fourtext">#5eb670</color>
+    <color name="fivetext">#f4a124</color>
+    <color name="divideBlue">#0ab7f8</color>
+    <color name="courseGray">#7f8585</color>
+    <color name="courseWillGray">#3f4848</color>
+    <color name="courseWillGreen">#33d179</color>
+    <color name="courseIngRed">#F6416C</color>
+    <color name="navColor">#d81e06</color>
+    <color name="cardpink">#fb6b94</color>
+
+    <color name="cardblue">#08d9d6</color>
+    <color name="cardred">#f6416c</color>
+    <color name="cardpulper">#aa96da</color>
+    <color name="carddeepblue">#3ec1d3</color>
+    <color name="cardgrey">#dbe2ef</color>
+    <color name="cardred2">#ff165d</color>
+    <color name="cardyello">#ff5722</color>
+    <color name="transparent">#00000000</color>  <!-- 定义完全透明颜色 -->
+    <color name="textlightblack">#303030</color>
+
+
+    <color name="redText">#e63564</color>
+    <color name="pulperText">#aa96da</color>
+
+    <color name="xiaoyaYellow">#fcb43f</color>
+    <color name="moocGreen">#00c658</color>
+
+    <color name="tasklightGreen">#66dd9b</color>
+    <color name="tasklightYellow">#fdcb79</color>
+    <color name="tasklightRed">#e04b38</color>
+
+    <color name="btnpulper">#aa96da</color>
+    <color name="btnblue">#2881fb</color>
+    <color name="btnyellow">#fcb43f</color>
+    <color name="btnlightblue">#9cd4fb</color>
+    <color name="btngreen">#00c658</color>
+
+    <color name="cardgreen">#abedd8</color>
+    <color name="cardlightblue">#9cd4fb</color>
+    <color name="cardlightYellow">#fdcb79</color>
+
+
+
+    <color name="titleCardbg">#dbe2ef</color>
+    <color name="dataCardbg">#dbe2ef</color>
+    <color name="btnBgPink">#fc5185</color>
+    <color name="naviSelectPink">#fc5185</color>
+    <color name="naviNoSelectPink">#364f6b</color>
+    <color name="courseTodayBlue">#08d9d6</color>
+    <color name="textDeepBlue">#3f72af</color>
+    <color name="textPink">#fc5185</color>
+    <color name="greenText">#5eb670</color>
+    <color name="bluetext">#006ebc</color>
+    <color name="appBack">#f9f7f7</color>
+    <color name="bottomNavi">#e4f9f5</color>
+    <color name="mycellitembg">#FFFFFF</color>
+    <color name="mylistcellGray">#dbdbdb</color>
+    <color name="widgetbg">#f5f5f5</color>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:id="@+id/course_widget"
+    android:background="@drawable/widgetbg">
+
+    <TextView
+        android:id="@+id/todayCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日课程" />
+    <TextView
+        android:id="@+id/no_courses_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今日无课"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/courseLast"
+        android:layout_above="@id/dianfeeTv"/>
+    <ImageButton
+        android:id="@+id/courseLast"
+        android:src="@drawable/course_last"
+        android:scaleType="fitXY"
+        android:background="@drawable/widgetbtnbg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/courseNext"/>
+
+    <ImageButton
+        android:id="@+id/courseNext"
+        android:src="@drawable/course_next"
+        android:scaleType="fitXY"
+        android:background="@drawable/widgetbtnbg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <ImageButton
+        android:id="@+id/courseRefresh"
+        android:src="@drawable/course_refresh"
+        android:scaleType="fitXY"
+        android:padding="2dp"
+        android:background="@drawable/widgetbtnbg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/courseLast"/>
+    <ListView
+        android:id="@+id/courseList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/courseLast"
+        android:layout_above="@id/dianfeeTv"/>
+    <TextView
+        android:id="@+id/dianfeeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NewMyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBack">
+
+        <TextView
+            android:id="@+id/MyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/titlebg"
+            android:text="@string/my_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/girdOne"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/servicegridbg"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/guideline14"
+            app:layout_constraintTop_toBottomOf="@id/guideline13">
+
+            <com.huanyu.wuthelper.myview.CustomTextImageView
+                android:id="@+id/allCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:TextImageImageSrc="@drawable/item_course"
+                app:TextImageText="@string/all_course" />
+
+            <com.huanyu.wuthelper.myview.CustomTextImageView
+                android:id="@+id/allTask"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:TextImageImageSrc="@drawable/item_task"
+                app:TextImageText="@string/all_task" />
+
+            <com.huanyu.wuthelper.myview.CustomTextImageView
+                android:id="@+id/allDianfee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:TextImageImageSrc="@drawable/item_dianfee"
+                app:TextImageText="@string/all_dianfee" />
+
+            <com.huanyu.wuthelper.myview.CustomTextImageView
+                android:id="@+id/allUser"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:TextImageImageSrc="@drawable/iteam_account"
+                app:TextImageText="@string/all_user" />
+            <com.huanyu.wuthelper.myview.CustomTextImageView
+                android:id="@+id/allOneWord"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:TextImageImageSrc="@drawable/item_oneword"
+                app:TextImageText="@string/all_OneWord" />
+
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/girdOne">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/toNavi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toNavi" />
+
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/toCourseSetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toCourseSettings" />
+
+
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/debugTool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toDebugTools" />
+
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/useGuide"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toUseGuide" />
+
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/checkUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toUpdate" />
+
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/aboutAPP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toAboutUs" />
+                    <com.huanyu.wuthelper.myview.CustomCellView
+                        android:id="@+id/debugUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:text="@string/toDebugUs" />
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.16" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.23" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

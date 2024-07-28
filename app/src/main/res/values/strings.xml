@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">吾理小工具</string>
+    <string name="app_desc">你的专属学习小助手</string>
+    <string name="app_madeby">by.huanyu</string>
+
+    <string name="Confirm">确定</string>
+
+    <string name="web_back">返回</string>
+    <string name="web_forward">前进</string>
+    <string name="web_home">主页</string>
+    <string name="web_refresh">刷新</string>
+    <string name="web_more">更多</string>
+    <string name="web_activtiy_back">退出网页</string>
+    <string name="web_go">加载网址</string>
+    <string name="web_site_more">网址-更多工具</string>
+
+
+    <string name="user_title">用户管理</string>
+    <string name="save">保存</string>
+    <string name="close">关闭</string>
+
+    <string name="testText">测试</string>
+    <string name="courseListTitle">全部课程</string>
+
+    <string name="task_title">全部课程</string>
+    <string name="task_endTask">已截止任务</string>
+    <string name="task_namefilter">课程排序</string>
+
+    <string name="my_title">我的设置</string>
+    <string name="tools_title">实用工具</string>
+    <string name="service_title">校园服务</string>
+    <string name="course_title">课程表</string>
+    <string name="home_title">今日课程</string>
+
+    <string name="locationSearch_title">地点查询</string>v
+    <string name="locationSearch_search">搜索</string>
+    <string name="locationSearch_area">南湖</string>
+    <string name="locationSearch_TextSearch">输入查询关键词</string>
+
+    <string name="oneWord_title">每日一言</string>
+
+    <string name="dianfeeList_title">电费清单</string>
+
+    <string name="courseSetting_title">课表设置</string>
+    <string name="courseSetting_unitStart">开学日期:</string>
+
+
+    <string name="courseEdit_title">课程编辑</string>
+    <string name="courseEdit_name">课程名</string>
+    <string name="courseEdit_day">星期几（1-7）</string>
+    <string name="courseEdit_room">教室</string>
+    <string name="courseEdit_teacher">老师</string>
+    <string name="courseEdit_StartNode">开始为第几节课</string>
+    <string name="courseEdit_EndNode">结束为第几节课</string>
+    <string name="courseEdit_StartWeek">开始周</string>
+    <string name="courseEdit_EndWeek">结束周</string>
+    <string name="courseEdit_Credit">学分</string>
+    <string name="courseEdit_Note">备注</string>
+
+
+    <string name="main_bottom_course">课程</string>
+    <string name="main_bottom_service">服务</string>
+    <string name="main_bottom_home">主页</string>
+    <string name="main_bottom_my">我的</string>
+    <string name="main_bottom_tools">工具</string>
+    <!--    mepage-->
+    <string name="all_course">全部课程</string>
+    <string name="all_task">全部任务</string>
+    <string name="all_dianfee">电费</string>
+    <string name="all_user">账号密码</string>
+    <string name="all_OneWord">每日一言</string>
+
+    <string name="toNavi">校园导航</string>
+    <string name="toCourseSettings">课表设置</string>
+    <string name="toDebugTools">调试工具</string>
+    <string name="toUseGuide">使用指南</string>
+    <string name="toUpdate">检查更新</string>
+    <string name="toAboutUs">关于APP</string>
+    <string name="toDebugUs">问题反馈</string>
+
+    <string name="btn_deleteAllCourse">删除所有课程</string>
+    <string name="btn_deleteAllCourseTask">删除所有乐从任务</string>
+    <string name="btn_deleteAllDianFee">删除所有电费信息</string>
+
+    <string name="menu_import_course">导入课表</string>
+    <string name="menu_set_course">课表设置</string>
+    <string name="menu_course_list">全部课程</string>
+    <string name="menu_course_edit">课程编辑</string>
+
+    <string name="textAppDesc">这是一个WUT的校园工具APP</string>
+</resources>

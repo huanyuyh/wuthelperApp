@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DebugActivity">
+    <TextView
+        android:id="@+id/MyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/toDebugTools"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="3"
+        app:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MyTitle">
+        <android.widget.Button
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+            app:layout_row="0"
+            app:layout_column="0"
+            android:id="@+id/deleteAllCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_deleteAllCourse"
+            android:background="@drawable/btn_blue_bg"/>
+        <android.widget.Button
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+            app:layout_row="0"
+            app:layout_column="1"
+            android:id="@+id/deleteAllCourseTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_deleteAllCourseTask"
+            android:background="@drawable/btn_blue_bg" />
+        <android.widget.Button
+            app:layout_columnWeight="1"
+
+            app:layout_gravity="center"
+            app:layout_row="0"
+            app:layout_column="2"
+            android:id="@+id/deleteAllDianFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_deleteAllDianFee"
+            android:background="@drawable/btn_blue_bg" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

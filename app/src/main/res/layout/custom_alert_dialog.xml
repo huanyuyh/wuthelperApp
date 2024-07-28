@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/custom_dialog_background">
+
+    <TextView
+        android:id="@+id/custom_alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="公告"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/custom_alert_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是一个公告"
+        android:textSize="16sp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimaryDark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+        <android.widget.Button
+            android:id="@+id/custom_alert_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/btnbg_pink"
+            android:text="取消"
+            android:layout_marginEnd="5dp"
+            android:textColor="@android:color/white" />
+        <android.widget.Button
+            android:id="@+id/custom_alert_button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_blue_bg"
+            android:text="确定"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

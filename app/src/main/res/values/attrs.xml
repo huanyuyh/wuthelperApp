@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCellView">
+        <attr name="text" format="string" />
+        <attr name="imageSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CustomTextImageView">
+        <attr name="TextImageText" format="string" />
+        <attr name="TextImageImageSrc" format="reference" />
+        <attr name="TextImageSelected" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomNaviItemView">
+        <attr name="NaviItemText" format="string" />
+        <attr name="NaviItemImageSrc" format="reference" />
+        <attr name="NaviItemSelected" format="boolean" />
+    </declare-styleable>
+</resources>

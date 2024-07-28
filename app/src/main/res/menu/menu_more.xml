@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/menu_import_course"
+        android:id="@+id/importCourse"
+        />
+    <item android:title="@string/menu_set_course"
+        android:id="@+id/setList"
+        />
+    <item
+        android:id="@+id/courseList"
+        android:title="@string/menu_course_list" />
+    <item
+        android:id="@+id/courseEdit"
+        android:title="@string/menu_course_edit" />
+</menu>

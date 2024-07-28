@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBack">
+
+
+
+        <TextView
+            android:id="@+id/MyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/titlebg"
+            android:text="@string/tools_title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textColor="@color/black" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MyTitle">
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MyTitle">
+
+                <TextView
+                    android:id="@+id/xywtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="校园网登录"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/servicegridbg"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/editWifiName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="校园网账号"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editWifiPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_marginTop="2dp"
+                        android:ems="10"
+                        android:inputType="text|textPassword"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="密码"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.666"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editWifiName" />
+
+                    <android.widget.Button
+                        android:id="@+id/loginBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_blue_bg"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        android:text="登录"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editWifiPass" />
+                    <android.widget.Button
+                        android:id="@+id/webloginBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_blue_bg"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="网页认证"
+                        android:layout_marginLeft="20dp"
+                        app:layout_constraintStart_toEndOf="@id/loginBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/editWifiPass" />
+                    <android.widget.Button
+                        android:id="@+id/savewifiBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_blue_bg"
+                        android:padding="10dp"
+                        android:textColor="@color/white"
+                        android:text="保存"
+                        android:layout_marginLeft="20dp"
+                        app:layout_constraintStart_toEndOf="@id/webloginBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/editWifiPass" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/difeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="电费查询"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/servicegridbg"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/dianfeiTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="请点击下方查询按钮"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/dianfeiSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dianfeiTitle">
+
+                        <Spinner
+                            android:id="@+id/AreaSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteX="10dp" />
+                        <Spinner
+                            android:id="@+id/BuildSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteX="10dp" />
+                        <Spinner
+                            android:id="@+id/FloorSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteX="10dp" />
+                        <Spinner
+                            android:id="@+id/RoomSelect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:layout_editor_absoluteX="10dp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/dianfeiBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_yellow_bg"
+                        android:padding="10dp"
+                        android:text="查询"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dianfeiSelect" />
+                    <TextView
+                        android:id="@+id/savedianfeiBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_yellow_bg"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="保存信息"
+                        app:layout_constraintStart_toEndOf="@id/dianfeiBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/dianfeiSelect" />
+                    <TextView
+                        android:id="@+id/showdianfeiBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_yellow_bg"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="查看电费清单"
+                        app:layout_constraintStart_toEndOf="@id/savedianfeiBtn"
+                        app:layout_constraintTop_toBottomOf="@+id/dianfeiSelect" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/xiaolitext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="校历查询"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/servicegridbg"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/xiaoliIv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/xzxiaoliTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_lightblue_bg"
+                        android:padding="10dp"
+                        android:text="刷新校历"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/xiaoliIv" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/servicegridbg"
+                    android:orientation="horizontal">
+                    <android.widget.Button
+                        android:id="@+id/xiaoyatestbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_yellow_bg"
+                        android:text="导入小雅任务"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <android.widget.Button
+                        android:id="@+id/mooctestbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_green_bg"
+                        android:text="导入mooc任务"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                    <android.widget.Button
+                        android:id="@+id/showTaskbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_lightblue_bg"
+                        android:text="查看所有任务"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
